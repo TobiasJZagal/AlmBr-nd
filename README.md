@@ -1,2 +1,2 @@
-# AlmBr-nd
-Alm. Brænd projekt 
+# AlmBrand
+Alm. Brand projekt 
