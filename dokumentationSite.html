@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Grid</title>
+    <link src="Main.css" rel="stylesheet" type="text/css">
+
+    <style>
+
+
+
+        .container {
+            display: grid;
+            height: 200vh;
+            grid-template: 150px 1fr 1fr 1fr/50px 1fr 1fr 1fr 50px;
+            grid-gap: 5px;
+            background-color: beige;
+        }
+
+        .container2 {
+            display: grid;
+            height: 50vh;
+            grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+            grid-gap: 5px;
+            background-color: beige;
+        }
+
+
+
+        .item-a {
+            z-index: 1;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+
+            grid-area: 1/1/1/6;
+            background-color: #5e5eeb;
+
+
+        }
+
+        .item-b {
+
+            background-color: #e6e650;
+            grid-area: 2/1/2/6;
+            order: 2;
+        }
+
+        .item-c {
+            background-color: #dd4c4c;
+            grid-area: 3/2/3/2;
+            order: 1;
+
+        }
+
+        .item-d {
+            background-color: #4cdd68;
+            grid-area: 3/3/3/3;
+            order: 2;
+        }
+
+        .item-e {
+
+            z-index: 0;
+            background-color: #de66e3;
+            grid-area: 3/4/3/4;
+            order: 2;
+
+        }
+        .item-f {
+
+            z-index: 0;
+            background-color: #413541;
+            grid-area: 4/1/4/6;
+            order: 2;
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="item-a">Navigation bar</div>
+        <div class="item-b">Splash</div>
+        <div class="item-c">Content</div>
+        <div class="item-d">Content</div>
+        <div class="item-e">Content</div>
+        <div class="item-f">Footer</div>
+    </div>
+</body>
+</html>
