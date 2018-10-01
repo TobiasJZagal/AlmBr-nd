@@ -10,6 +10,13 @@
 
 
 
+        .splash{
+        background: url(Approaching-London-2400x1350-wide-wallpapers.net.jpg);
+        background-position:bottom;
+        background-size: 130em;
+
+        }
+
         .container {
             display: grid;
             height: 250vh;
@@ -63,7 +70,7 @@
             display: grid;
             height: 100%;
             grid-gap: 3rem;
-            grid-template: 100px 100px 450px 500px 1fr/ 1fr 450px 450px 450px 1fr
+            grid-template: 100px 100px 450px 500px 1fr/ 1fr 2fr 2fr 2fr 1fr
 
         }
 
@@ -221,4 +228,37 @@
 
 }
 
+body{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Libre Baskerville', serif;
+}
 
+.nav{
+    background-color: #ffffff
+}
+
+.main{
+   background-color: #ffffff
+
+}
+
+.content1{
+  background-color:  #EBF6FC
+}
+
+.content2{
+    background-color: #D5EDFA
+}
+
+.content3{
+    background-color: #052951
+}
+
+.content4{
+    background-color: #D5EDFA
+}
+
+.footer{
+    background-color: #052951
+}
