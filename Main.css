@@ -155,8 +155,8 @@
 
         .container {
             display: grid;
-            height: 250vh;
-            grid-template: 150px 200px 500px 100px 1fr 150px/1fr;
+            height: 370vh;
+            grid-template: 150px 200px 0.5fr 100px 1.5fr 150px/1fr;
 
             background-color: beige;
         }
