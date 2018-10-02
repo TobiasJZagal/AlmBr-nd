@@ -19,7 +19,7 @@
 
         .container {
             display: grid;
-            height: 250vh;
+            height: 300vh;
             grid-template: 150px 150px 1fr 100px 3fr 150px/1fr 900px 1fr;
 
             background-color: beige;
@@ -132,7 +132,7 @@
 
      .container {
             display: grid;
-            height: 250vh;
+            height: 300vh;
             grid-template: 150px 150px 1fr 100px 3fr 150px/1fr 700px 1fr;
 
             background-color: beige;
