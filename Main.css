@@ -11,9 +11,9 @@
 
 
         .splash{
-        background: url(Approaching-London-2400x1350-wide-wallpapers.net.jpg);
+        background: url(5563415c-7059-11e8-b1d3-9161aa45bf67_4000x1584_103556.webp);
         background-position:bottom;
-        background-size: 130em;
+        background-size: 80em;
 
         }
 
@@ -34,6 +34,42 @@
             position: sticky;
             top: 0;
             z-index: 2;
+
+            display: grid;
+            grid-template: 1fr 1fr/ 1fr;
+
+
+        }
+
+        .nav p {
+            grid-area: 1/1/1/1;
+            margin-top: 1rem;
+
+        }
+        .nav label {
+            grid-area: 1/1/1/1;
+            margin-top: 1rem;
+
+        }
+
+        .menu {
+            grid-area: 2/1/2/1;
+            margin-top: 2rem;
+             transition: 1s;
+        }
+
+        a{
+            color: #052951;
+            text-decoration:none;
+            padding: 5rem;
+            transition: 0.3s;
+
+
+        }
+
+       a:hover{
+           color: #3e97f8;
+            text-decoration:underline;
 
         }
 
@@ -57,6 +93,14 @@
 
         .splashInfo p {
             color: #ffffff;
+            font-size: 3rem;
+            line-height: 5rem;
+            padding: 2rem;
+        }
+
+        .splashInfo h3{
+            font-weight: 100;
+            color: #ffffff;
         }
 
         .main {
@@ -64,6 +108,18 @@
             grid-area: 4/1/6/4;
             order: 2;
 
+        }
+
+        .main h4 {
+            font-weight: 100;
+        }
+
+        .main p {
+            font-size: 3rem;
+        }
+
+        .content4 p {
+            font-size: 4rem;
         }
 
         .containerMain {
@@ -120,6 +176,16 @@
             top: 0;
             z-index: 2;
 
+
+        }
+
+    a{
+            color: #052951;
+            text-decoration:none;
+            padding: 2rem;
+            transition: 0.3s;
+
+
         }
 
     .containerMain {
@@ -151,12 +217,60 @@
             top: 0;
             z-index: 2;
 
+            display: grid;
+            grid-template: 1fr 1fr/100px 1fr 100px;
+            border-bottom: 1px solid rgb(5, 41, 81);
+
+
         }
+
+
+
+
+        .nav p {
+            font-size: 2rem;
+            grid-area: 1/2/1/2;
+            margin-top: 3rem;
+            margin-bottom: 0;
+
+
+        }
+
+         label {
+        display: block;
+        cursor: pointer;
+    }
+
+
+
+         .menu {
+             display: none;
+        text-align: center;
+        width: 100%;
+
+        }
+
+
+        .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+
+        }
+
+        #toggle {
+        display: none;
+        }
+
+         #toggle:checked + .menu {
+        display: block;
+    }
+
 
         .container {
             display: grid;
             height: 370vh;
-            grid-template: 150px 200px 0.5fr 100px 1.5fr 150px/1fr;
+            grid-template: 90px 200px 0.5fr 100px 1.5fr 150px/1fr;
 
             background-color: beige;
         }
@@ -173,6 +287,10 @@
             order: 2;
 
         }
+
+    .splash {
+        background-size: 100em;
+    }
 
 
 
@@ -239,7 +357,8 @@ body{
 }
 
 .main{
-   background-color: #ffffff
+
+   background: linear-gradient(0deg, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255) 70.71%)
 
 }
 
@@ -252,6 +371,7 @@ body{
 }
 
 .content3{
+    color: white;
     background-color: #052951
 }
 
@@ -260,5 +380,6 @@ body{
 }
 
 .footer{
-    background-color: #052951
+    color: white;
+    background-color: rgb(5, 41, 81)
 }
