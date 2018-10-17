@@ -115,11 +115,12 @@
         }
 
         .main p {
-            font-size: 3rem;
+            font-size: 2rem;
+            line-height: 2
         }
 
         .content4 p {
-            font-size: 4rem;
+            font-size: 3rem;
         }
 
         .containerMain {
@@ -165,6 +166,19 @@
             top: 0;
         }
 
+        label {
+        display: none;
+        cursor: pointer;
+    }
+
+    #toggle {
+        display: none;
+        }
+
+.mainHeadline{
+    visibility: collapse;
+}
+
 @media only screen and (max-width: 1280px) {
 
     .nav {
@@ -203,6 +217,16 @@
 
             background-color: beige;
         }
+    .main p {
+            font-size: 2rem;
+            line-height: 1.2
+        }
+
+    .content4 p {
+
+        font-size: 3rem;
+            line-height: 2
+    }
 
 }
 
@@ -244,10 +268,11 @@
 
 
          .menu {
-             display: none;
+            display: none;
         text-align: center;
         width: 100%;
-
+             grid-area: 2/1/2/4;
+             background-color: white;
         }
 
 
@@ -258,13 +283,20 @@
 
         }
 
-        #toggle {
-        display: none;
+        .main p {
+            font-size: 2rem;
+            line-height: 2
         }
 
-         #toggle:checked + .menu {
-        display: block;
+         #toggle:checked ~ .menu{
+             display: block;
+
+
     }
+
+         #toggle {
+        display: none;
+        }
 
 
         .container {
@@ -344,6 +376,11 @@
             top: 0;
         }
 
+        .content4 p {
+
+        font-size: 3rem;
+            line-height: 2
+    }
 }
 
 body{
